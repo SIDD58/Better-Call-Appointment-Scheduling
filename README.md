@@ -7,10 +7,10 @@ Local Edge Function (GitHub): https://github.com/SIDD58/Better-Call-Appointment-
 
 ## Tech Stack
 
-Frontend : React, HTML, CSS , supabase client library
-Frontend Deployment : Vercel
-Serverless Function: Deno (JS Runtime), Supabase Edge Function , Supabase DATA API
-Messaging API : Meta Cloud API 
+1. Frontend : React, HTML, CSS , supabase client library
+2. Frontend Deployment : Vercel
+3. Serverless Function: Deno (JS Runtime), Supabase Edge Function , Supabase DATA API
+4. Messaging API : Meta Cloud API 
 
 
 ## Workflow:
