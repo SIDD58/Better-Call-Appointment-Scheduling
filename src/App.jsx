@@ -6,59 +6,6 @@ import AppointmentForm from './components/AppointmentForm';
 import AppointmentList from './components/AppointmentList';
 import Footer from './components/Footer';
 
-// function App() {
-//   console.log(supabase)
-//   const [supa_error, set_fetch_error] = useState(null)
-//   const [appointments, set_appointments] = useState(null)
-
-//   useEffect(
-//     () => {
-//       const view_database = async () => {
-//         const { data, error } = await supabase.from('Appointment').select()
-//         if (error) {
-//           set_fetch_error("Cannot Fetch Records")
-//           console.log("Error", error)
-//           set_appointments(null)
-//         }
-//         else if (data) {
-//           set_appointments(data)
-//           console.log("Data has been added", data)
-//           set_fetch_error(null)
-//         }
-//       };
-//       view_database()
-//     }, []
-//   )
-
-//   return (
-//     <>
-//       {supa_error && <p>{supa_error}</p>}
-
-//       {appointments &&
-//         <ul>
-//           {appointments.map(
-//             (appointment) => {
-//               return (
-//                 <li key={appointment.id}>
-//                   {appointment.customerName}
-//                   {appointment.phone}
-//                   {appointment.time}
-//                 </li>
-//               )
-//             }
-//           )}
-//         </ul>
-//       }
-
-
-
-//     </>
-//   )
-// }
-
-
-
-
 function App() {
   console.log(supabase);
   const [appointments, setAppointments] = useState([]);
@@ -191,3 +138,55 @@ function App() {
 }
 
 export default App;
+
+
+
+// function App() {
+//   console.log(supabase)
+//   const [supa_error, set_fetch_error] = useState(null)
+//   const [appointments, set_appointments] = useState(null)
+
+//   useEffect(
+//     () => {
+//       const view_database = async () => {
+//         const { data, error } = await supabase.from('Appointment').select()
+//         if (error) {
+//           set_fetch_error("Cannot Fetch Records")
+//           console.log("Error", error)
+//           set_appointments(null)
+//         }
+//         else if (data) {
+//           set_appointments(data)
+//           console.log("Data has been added", data)
+//           set_fetch_error(null)
+//         }
+//       };
+//       view_database()
+//     }, []
+//   )
+
+//   return (
+//     <>
+//       {supa_error && <p>{supa_error}</p>}
+
+//       {appointments &&
+//         <ul>
+//           {appointments.map(
+//             (appointment) => {
+//               return (
+//                 <li key={appointment.id}>
+//                   {appointment.customerName}
+//                   {appointment.phone}
+//                   {appointment.time}
+//                 </li>
+//               )
+//             }
+//           )}
+//         </ul>
+//       }
+
+
+
+//     </>
+//   )
+// }

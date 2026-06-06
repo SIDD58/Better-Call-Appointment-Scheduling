@@ -24,6 +24,8 @@ function AppointmentForm({ onAddAppointment, editingAppointment, onUpdateAppoint
     }
   }, [editingAppointment]);
 
+// Validations 
+
   const validate = () => {
     const newErrors = {};
     if (!formData.customerName.trim()) {

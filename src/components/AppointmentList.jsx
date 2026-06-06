@@ -10,6 +10,7 @@ function AppointmentList({ appointments, onDelete, onEdit, formatDateTime }) {
           <span className="badge">{appointments.length} Slots</span>
         </div>
 
+        {/* Empty state component will be shown in case the length of appointments is zero.  */}
         {appointments.length === 0 ? (
           <div className="empty-state">
             <div className="empty-icon">🍃</div>
