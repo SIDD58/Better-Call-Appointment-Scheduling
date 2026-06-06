@@ -25,7 +25,8 @@ Messaging API : Meta Cloud API
 1. Temporary meta cloud API Token (Free) is being used , It refreshes after some hours , that has to be manually updated in Serverless edge function for now, unless we change it to permanent Cloud API token
 2. In free plan you can register upto 5 phone number by OTP verification , right now I am using one of my WhatsApp number for verification
 3. User initiated messages are used as for template message to get approved by meta cloud API , It takes sometime.
+4. WhatsApp Cloud API requires this format 917873735871 (with country code without + or spaces ot () ), However we have allowed this in validation ofr user better expereince , this will be preprocessed in backend function. 
 
 ## FrontEnd Design 
-1. Appointment Form : To input customer name , phone number and appointment date and time
+1. Appointment Form with validations: To input customer name , phone number and appointment date and time
 2. Appointment Dashbaord: Dashboard to show the Current Appointments 
